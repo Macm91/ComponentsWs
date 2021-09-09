@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './App.css';
 import DisplayName from "./DisplayName/DisplayName";
 import NameList from "./NameList/NameList";
+import AlertUser from "./AlertUser/AlertUser";
 
 
 class App extends Component {
@@ -15,19 +16,23 @@ class App extends Component {
         ]
 
         this.state = {
-            personNumber: 0
+            personNumber: 0,
         };
+    }
+
+    alert = () => {
+       
     }
 
     render (){
         return(
         <div className= "container-fluid">
             <DisplayName person={this.person[this.state.personNumber]} />
-            <NameList name={this.names[this.state.personNumber]} />
+            <NameList names={this.names}/>
+            <AlertUser alert= {this.alert}/>
         </div>
         )
     }
-
 }
 
 

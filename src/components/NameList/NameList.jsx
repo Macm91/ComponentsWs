@@ -1,15 +1,20 @@
 import React from "react";
 
 
-const NameList = (props) => {
-    return(
-        <div class='nameList'>
+const NameList=(props)=>{
+    
+        return(
+        <React.Fragment>
+            <h2> Names </h2>
+            <hr/>
             <ul className='list'>
-                <li className='singleName'>{props.name}</li>
+                {props.names.map((name)=>{
+                    return <li> {name} </li>
+                })}
             </ul>
-        </div>
-    )
-}
+        </React.Fragment>
+        );
+    }
 
-// Iterating throught the list through props needs to be figured out.
-// Need to update the name= blah in NameLIst in render
+
+export default NameList;
