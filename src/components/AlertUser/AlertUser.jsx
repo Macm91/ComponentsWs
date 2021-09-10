@@ -1,14 +1,11 @@
 import React from "react";
+import './AlertUser.css'
 
 
-// write button to DISPLAY the function from App.jsx here.
-//  THen export it to APp.jsx
 
 const AlertUser =(props)=>{
     return(
-        <div className="button">
             <button type="button"  onClick={props.alert}>Click Me!</button>
-        </div>
     )
 }
 
