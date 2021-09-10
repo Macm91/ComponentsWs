@@ -1,0 +1,13 @@
+.tableHeader{
+    background-color: aquamarine;
+    
+}
+
+.table{
+    border-style: groove;
+    border-color: black;
+    width:fit-content;
+    margin: 20%;
+    padding-right: 5%;
+
+}

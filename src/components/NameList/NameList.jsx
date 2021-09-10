@@ -1,10 +1,11 @@
 import React from "react";
+import './NameList.css'
 
 
 const NameList=(props)=>{
     
         return(
-        <React.Fragment>
+        <div className='header'>
             <h2> Names </h2>
             <hr/>
             <ul className='list'>
@@ -12,7 +13,7 @@ const NameList=(props)=>{
                     return <li> {name} </li>
                 })}
             </ul>
-        </React.Fragment>
+        </div>
         );
     }
 

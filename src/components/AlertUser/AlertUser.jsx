@@ -7,7 +7,7 @@ import React from "react";
 const AlertUser =(props)=>{
     return(
         <div className="button">
-            <button onClick={props.alert}>Click Me!</button>
+            <button type="button"  onClick={props.alert}>Click Me!</button>
         </div>
     )
 }

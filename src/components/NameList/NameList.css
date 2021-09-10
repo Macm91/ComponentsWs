@@ -1,0 +1,11 @@
+
+.header {
+    border-color: black;
+    border-style: double;
+    width:fit-content;
+    text-align: justify;
+    background-color: lightgray;
+    margin:auto;
+    padding: 3%;
+}
+

@@ -1,5 +1,5 @@
 import React from "react";
-
+import './DisplayName.css'
 
 
 const DisplayName = (props) => {
